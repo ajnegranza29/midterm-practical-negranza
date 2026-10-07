@@ -1,0 +1,133 @@
+/* DESIGN TOKENS */
+:root {
+    --green: #006633;
+    --dark: #222222;
+    --white: #ffffff;
+    --light: #f2f2f2;
+    --border: #cccccc;
+
+    --small: 8px;
+    --medium: 16px;
+    --large: 24px;
+
+    --text: 16px;
+    --heading: 28px;
+}
+
+/* BASIC STYLE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--text);
+    line-height: 1.5;
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* HEADER */
+header {
+    background: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: var(--large);
+}
+
+h1 {
+    font-size: var(--heading);
+}
+
+/* NAVIGATION */
+nav {
+    background: var(--dark);
+    text-align: center;
+    padding: var(--medium);
+}
+
+nav a {
+    color: var(--white);
+    margin: var(--medium);
+}
+
+nav a:hover {
+    background: var(--green);
+}
+
+nav a:focus {
+    outline: 3px solid white;
+}
+
+/* MAIN */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: var(--large);
+}
+
+/* COMPONENT 1: SECTION */
+section {
+    background: var(--white);
+    padding: var(--large);
+    margin-bottom: var(--large);
+    border: 1px solid var(--border);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: var(--small);
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small);
+}
+
+input,
+textarea {
+    padding: var(--small);
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--green);
+}
+
+/* COMPONENT 2: BUTTON */
+button {
+    background: var(--green);
+    color: var(--white);
+    padding: var(--small);
+    border: none;
+}
+
+button:hover {
+    background: var(--dark);
+}
+
+button:focus {
+    outline: 3px solid black;
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: var(--medium);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: var(--small);
+    }
+}
